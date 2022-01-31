@@ -1,4 +1,4 @@
-source.oysterworld.jpへのデプロイ手順（warファイルの場合）
+## source.oysterworld.jpへのデプロイ手順（warファイルの場合）
 
 ①spring projectからwarファイル作成する
 ※注意※
