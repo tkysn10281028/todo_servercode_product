@@ -96,7 +96,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.formLogin().loginProcessingUrl("/").loginPage("/").usernameParameter("emailaddress")
 				.passwordParameter("password").successHandler(successHandler).failureHandler(failureHandler);
 
-		http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/home");
+		http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/mytodo/");
 
 		http.csrf().csrfTokenRepository(new CookieCsrfTokenRepository())
 				.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());

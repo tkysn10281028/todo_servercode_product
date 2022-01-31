@@ -16,6 +16,6 @@ public class SuccessHandler implements AuthenticationSuccessHandler {
 	public void onAuthenticationSuccess(HttpServletRequest req, HttpServletResponse res, Authentication auth)
 			throws IOException, ServletException {
 		System.out.println("login success\n");
-		res.sendRedirect("/user/read");
+		res.sendRedirect("/mytodo/user/read");
 	}
 }
